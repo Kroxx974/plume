@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <title>Site de PLUME : l'éditeur de cours /TD de maths</title>
+  <link rel="icon" href="./asset/plume.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./w3.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  />
+  <body >
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+
+    <!-- Header/Home -->
+    <header style="margin-left:0px" class="w3-container w3-padding-32 w3-center ">
+        <h1 class="w3-jumbo"><span class="w3-hide-small"><img src="./asset/plume.png" width=60 height=60> PLUME <img src="./asset/plume.png" width=60 height=60></h1>
+        <h2 class = "title">Le traitement de texte / math / algo / géométrie / graphes</h2>
+    </header>
+    <!-- Page Content -->
+    <div  class = "w3-container"> 
+        <article class="w3-content w3-justify light" >
+            <div class="w3-row">
+                <div class="w3-half w3-container">
+                Chers professeurs de mathématiques : 
+                <ul>
+                    <li>vous en avez marre de taper vos formules de maths sous word, 
+                    mais vous n'êtes pas forcément fan de LATEX, car trop lourd, trop de préambules, trop de bibliothèques à installer ?
+                    </li>
+                    <li>Vous essayez de taper du code Python, mais vos indentations ne sont jamais comme vous le souhaitez ?</li>
+                    <li>Vous voulez taper le corrigé d'un devoir de probabilité mais vous passez 30 minutes à dessiner un arbre sur paint ?</li>
+                </ul> 
+                Alors essayez Plume...
+                </div>
+                <div class="w3-half w3-container">
+                <img src="./asset/plume_big_intro.png" alt="plume_intro" class="w3-image" >
+                </div>
+            </div>
+        </article>
+        <script>
+            function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += "w3-show";
+                }
+                else{ 
+                    x.className = x.className.replace("w3-show", " ");
+                }
+            }
+        </script>
+        <article class="w3-content w3-justify light">
+            <button onclick="myFunction('latex')" class="w3-btn w3-block w3-light-gray w3-left-align"> 
+                <h4> <i class="fa fa-thumbtack"></i> Taper des maths comme en LATEX</h4>
+            </button>
+            <div class="w3-center"><img style="width:70%" id = "latex" class="w3-container w3-hide"  src="./asset/gif/latex_gif.gif" alt="latex" class="w3-image" >
+            </div>
+            <br>
+            <button onclick="myFunction('python')" class="w3-btn w3-block w3-light-gray w3-left-align"> 
+                <h4> <i class="fa fa-thumbtack"></i> Taper du code PYTHON</h4>
+            </button>
+            <div class="w3-center"><img style="width:70%" id = "python" class="w3-container w3-hide" src="./asset/gif/code_gif.gif" alt="python" class="w3-image" >
+            </div>
+            <br>
+            <button onclick="myFunction('tableaux')" class="w3-btn w3-block w3-light-gray w3-left-align"> 
+                <h4> <i class="fa fa-thumbtack"></i> générer des tableaux de signes et de variations</h4>
+            </button>
+            <div class="w3-center"><img style="width:70%" id = "tableaux" class="w3-container w3-hide" src="./asset/gif/tableau_gif.gif" alt="tableaux" class="w3-image" >
+            </div>
+            <br>
+            <button onclick="myFunction('geometrie')" class="w3-btn w3-block w3-light-gray w3-left-align"> 
+                <h4> <i class="fa fa-thumbtack"></i> Créer et insérer rapidement vos productions géométriques</h4>
+            </button>
+            <div class="w3-center"><img style="width:50%; height:50%" id = "geometrie" class="w3-container w3-hide" src="./asset/gif/geometrie_gif.gif" alt="geometrie" class="w3-image" >
+            </div>
+            <br>
+            <button onclick="myFunction('graphe')" class="w3-btn w3-block w3-light-gray w3-left-align"> 
+                <h4> <i class="fa fa-thumbtack"></i> Créer et importer facilement vos graphes</h4>
+            </button>
+            <div class="w3-center"><img style="width:50%; height:50%" id = "graphe" class="w3-container w3-hide" src="./asset/gif/graphe_gif.gif" alt="graphe" class="w3-image" >
+            </div>
+            <br>
+        </article>   
+        <article class="w3-content w3-justify light" >
+            <hr style="width:200px" class="w3-opacity">
+            <a href="./version/plume_0.7.1_win.zip">
+                <img src="./asset/icon_windows.png" width=50 height=50> Télécharger plume pour windows
+            </a><br><br>
+            <a href="./version/plume_0.7.1_amd64.deb">
+                <img src="./asset/icon_linux_48.png" width=50 height=50> Télécharger plume pour Linux
+            </a><br><br>
+
+
+
+            <a href="./version/exemple.zip">
+                <img src="./asset/img_zip.png" width=50 height=50> Un exemple à télécharger, qui vous expliquera globalement à peu près tout.
+            </a>
+        </article>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-content w3-justify light">
+		&copy; Olivier Sicard
+    </footer>
+  </body>
+</html>
