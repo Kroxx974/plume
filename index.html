@@ -20,14 +20,16 @@
         <article class="w3-content w3-justify light" >
             <div class="w3-row">
                 <div class="w3-half w3-container">
-                <h3>Chers professeurs de mathématiques : </h3>
+                <h3>Chers amis des mathématiques : </h3>
                 <ul>
+                    <li>vous êtes professeur de mathématiques ou peut-être étudiant</li>
                     <li>vous en avez assez de taper vos formules de maths sous <strong>Word</strong>, y-a-t'il vraiment besoin de préciser pourquoi ?</li>
                     <li>vous n'êtes pas forcément fan de <strong>LaTeX</strong>, car trop lourd, trop de préambules, trop de bibliothèques à installer, la compilation c'est une perte de temps ?</li>
                     <li>Vous essayez de taper du code <strong>Python</strong>, mais vos indentations ne sont jamais comme vous le souhaitez ?</li>
                     <li>Vous voulez taper le corrigé d'un devoir de probabilité mais vous passez 30 minutes à dessiner un arbre sur paint ?</li>
                 </ul> 
                 Alors essayez <strong>Plume</strong> !
+                
                 <br>
                 <!-- <a href="https://discord.gg/TtqTtsHZc5"><img src="./asset/logo_discord.png" alt="logo_discord" width=50 height=50 class="w3-image" > Rejoindre le DISCORD</a> -->
                 </div>
@@ -35,6 +37,7 @@
                 <img src="./asset/plume_big_intro.png" alt="plume_intro" class="w3-image" >
                 </div>
             </div>
+            <h6>C'est l'éditeur de cours de maths que j'aurais aimé avoir quand j'ai commencé à enseigner...</h6>
         </article>
         <script>
             function showOrNot(id) {
@@ -94,26 +97,34 @@
             <a href="https://nuage07.apps.education.fr/index.php/s/rf8XqNycBQyTJ28" target="_blank">
                 <img src="./asset/icon_linux_48.png" width=50 height=50> Télécharger plume pour Linux
             </a><br><br>
-        
             <a href="exemple.zip">
                 <img src="./asset/img_zip.png" width=50 height=50> Un exemple à télécharger, qui vous expliquera globalement à peu près tout.
             </a>
         </article>
-    </div>
-	   <article class="w3-content w3-justify light" >
+        <article class="w3-content w3-justify light" >
             <h3>REMERCIMENTS</h3>
-	    <hr style="width:200px" class="w3-opacity">
-	    Boris L. - Cyril L. - Emmanuel L. - Benjamin B. 
-    </article>
-    <article class="w3-content w3-justify light" >
+	        <hr style="width:200px" class="w3-opacity">
+	        Boris L. - Cyril L. - Emmanuel L. - Benjamin B. 
+        </article>
+        <article class="w3-content w3-justify light" >
             <h3>FAIRE UN DON AU DEVELOPPEUR</h3>
-	    <hr style="width:200px" class="w3-opacity">
-	    <form action="https://www.paypal.com/donate" method="post" target="_top">
-	            <input type="hidden" name="hosted_button_id" value="YPA9HDEC2JPQU" />
-	            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-	            <img alt="" border="0" src="https://www.paypal.com/en_RE/i/scr/pixel.gif" width="1" height="1" />
-	    </form>
-    </article>
+            Plume est un logiciel gratuit et il le restera. 
+            <div id="donate-button-container">
+                <div id="donate-button">
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                    PayPal.Donation.Button({env:'production',hosted_button_id:'YPA9HDEC2JPQU',image: {
+                        src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                        alt:'Donate with PayPal button',
+                        title:'PayPal - The safer, easier way to pay online !',
+                    }
+                    }).render('#donate-button');
+                    </script>
+                </div>  
+            </div>
+          
+        </article>
+    
     <footer class="w3-content w3-justify light">
 		&copy; Olivier Sicard
     </footer>
